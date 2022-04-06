@@ -82,11 +82,6 @@ header {
 	box-shadow: 0px 5px 5px hsl(171, 66%, 32%);
 }
 
-.ios::before {
-	content: "";
-	position: absolute;
-}
-
 .mac {
 	background: hsl(233, 100%, 69%);
 	box-shadow: 0px 5px 5px hsl(233, 100%, 59%);
@@ -101,9 +96,29 @@ header {
 		TABLET VIEW 
 ############################*/
 
-@media screen and (min-width: 376px) and (max-width: 865px) {
+@media screen and (min-width: 445px) and (max-width: 865px) {
 	.header_img {
 		background-image: url(./images/bg-header-desktop.png);
+	}
+
+	.header_heading {
+		width: 342px;
+		font-size: 28px;
+	}
+
+	.header_para {
+		width: 292px;
+		font-size: 12px;
+	}
+
+	.buttons {
+		width: 500px;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.btn {
+		width: 200px;
 	}
 
 	.ios {
@@ -122,6 +137,25 @@ header {
 @media screen and (min-width: 866px) {
 	.header_img {
 		background-image: url(./images/bg-header-desktop.png);
+	}
+
+	.header_heading {
+		width: 684px;
+		font-size: 32px;
+	}
+
+	.header_para {
+		width: 634px;
+		font-size: 16px;
+	}
+
+	.buttons {
+		width: 500px;
+		flex-direction: row;
+	}
+
+	.btn {
+		width: 226px;
 	}
 
 	.ios {
