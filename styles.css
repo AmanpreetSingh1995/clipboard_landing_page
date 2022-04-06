@@ -23,6 +23,8 @@ button {
 	cursor: pointer;
 }
 
+/* Header Starts */
+
 .header_img {
 	position: absolute;
 	width: 100%;
@@ -92,13 +94,69 @@ header {
 	opacity: 0.75;
 }
 
+/* Header Ends */
+
+/* Hero Section Starts */
+
+.hero {
+	width: 50%;
+	height: 1138px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero_heading {
+	width: 232px;
+	padding-top: 74px;
+	padding-bottom: 24px;
+}
+
+.hero_para {
+	width: 302px;
+	padding-bottom: 68px;
+}
+
+.hero_imge {
+	width: 312px;
+	height: 238px;
+	margin-bottom: 60px;
+}
+
+.hero_text {
+	width: 298px;
+	height: 418px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.hero_subHeading {
+	font-size: 20px;
+}
+
+.hero_subPara {
+	font-size: 14px;
+}
+
+/* Hero Section Ends */
+
 /*############################
 		TABLET VIEW 
 ############################*/
 
-@media screen and (min-width: 476px) and (max-width: 865px) {
+@media screen and (min-width: 476px) and (max-width: 965px) {
+	/* Header Starts */
+
 	.header_img {
 		background-image: url(./images/bg-header-desktop.png);
+	}
+
+	.header {
+		height: 714px;
 	}
 
 	.header_heading {
@@ -128,15 +186,53 @@ header {
 	.mac {
 		box-shadow: 5px 7px 10px hsl(233, 100%, 59%);
 	}
+
+	/* Header Ends */
+
+	/* Hero Section Starts */
+
+	.hero_heading {
+		width: 488px;
+		padding-top: 88px;
+		padding-bottom: 30px;
+		font-size: 26px;
+	}
+
+	.hero_para {
+		width: 574px;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero_imge {
+		width: 462px;
+		height: 419px;
+	}
+
+	.hero_text {
+		width: 328px;
+	}
+	/* Hero Section Ends */
 }
 
 /*############################
 		DESKTOP VIEW 
 ############################*/
 
-@media screen and (min-width: 866px) {
+@media screen and (min-width: 966px) {
+	/* Header Starts */
+
 	.header_img {
 		background-image: url(./images/bg-header-desktop.png);
+	}
+
+	.header {
+		height: 724px;
 	}
 
 	.header_heading {
@@ -165,4 +261,44 @@ header {
 	.mac {
 		box-shadow: 5px 10px 15px hsl(233, 100%, 59%);
 	}
+
+	/* Header Ends */
+
+	/* Hero Section Starts */
+
+	.hero {
+		width: 100%;
+	}
+
+	.hero_heading {
+		padding-top: 88px;
+		padding-bottom: 30px;
+		width: 488px;
+		font-size: 26px;
+	}
+
+	.hero_para {
+		width: 700px;
+		line-height: 1.6;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.hero_imge {
+		width: 720px;
+		height: 572px;
+	}
+
+	.hero_text {
+		width: 353px;
+		height: 576px;
+		padding: 70px 0;
+		text-align: left;
+	}
+
+	/* Hero Section Ends */
 }
