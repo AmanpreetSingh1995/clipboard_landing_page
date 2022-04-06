@@ -79,12 +79,17 @@ header {
 
 .ios {
 	background: hsl(171, 66%, 44%);
-	box-shadow: 0px 2px 5px hsl(171deg 66% 44%);
+	box-shadow: 0px 5px 5px hsl(171, 66%, 32%);
+}
+
+.ios::before {
+	content: "";
+	position: absolute;
 }
 
 .mac {
 	background: hsl(233, 100%, 69%);
-	box-shadow: 0px 2px 5px hsl(233, 100%, 69%);
+	box-shadow: 0px 5px 5px hsl(233, 100%, 59%);
 }
 
 .ios:hover,
@@ -92,7 +97,9 @@ header {
 	opacity: 0.75;
 }
 
-/* MOBILE VIEW */
+/*############################
+		TABLET VIEW 
+############################*/
 
 @media screen and (min-width: 376px) and (max-width: 865px) {
 	.header_img {
@@ -100,13 +107,17 @@ header {
 	}
 
 	.ios {
-		box-shadow: 5px 7px 15px hsl(171deg 66% 44%);
+		box-shadow: 5px 7px 10px hsl(171, 66%, 34%);
 	}
 
 	.mac {
-		box-shadow: 5px 7px 15px hsl(233, 100%, 69%);
+		box-shadow: 5px 7px 10px hsl(233, 100%, 59%);
 	}
 }
+
+/*############################
+		DESKTOP VIEW 
+############################*/
 
 @media screen and (min-width: 866px) {
 	.header_img {
@@ -114,10 +125,10 @@ header {
 	}
 
 	.ios {
-		box-shadow: 5px 10px 25px hsl(171deg 66% 44%);
+		box-shadow: 5px 10px 15px hsl(171deg 66% 34%);
 	}
 
 	.mac {
-		box-shadow: 5px 10px 25px hsl(233, 100%, 69%);
+		box-shadow: 5px 10px 15px hsl(233, 100%, 59%);
 	}
 }
