@@ -144,6 +144,24 @@ header {
 
 /* Hero Section Ends */
 
+/* Access Section Starts */
+
+.access {
+	height: 587px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 74px 0;
+}
+
+.access_imge {
+	width: 316px;
+	height: 238px;
+}
+
+/* Access Section Ends */
+
 /*############################
 		TABLET VIEW 
 ############################*/
